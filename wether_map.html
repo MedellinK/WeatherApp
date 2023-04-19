@@ -1,0 +1,85 @@
+<!-- Declaration of document type -->
+<!DOCTYPE html>
+<!-- Document language -->
+<html lang="en">
+<!-- Head section -->
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    <!-- Title of the page -->
+    <title>Klima</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/resets.css">
+    <!-- Layout CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- Mapbox GL CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet'/>
+    <!-- Weather Map CSS -->
+    <link rel="stylesheet" href="css/weather_map.css">
+</head>
+<!-- Body section -->
+<body>
+<!-- Page wrapper section -->
+<div class="page-wrapper">
+    <!-- Div tag with the id of "map" containing the map -->
+    <div id="map"></div>
+    <!-- Top section container -->
+    <div class="container relative">
+        <!-- Top section row  -->
+        <div class="row shrink justify-center align-center">
+            <!-- Top section column -->
+            <div class="column align-center shrink justify-center" id="main-header">
+                <!-- Header text -->
+                <h1>Klima</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Search bar container -->
+    <div class="container relative">
+        <!-- Search bar row container -->
+        <div class="row full-width">
+            <!-- Search bar section -->
+            <div class="column shrink" id="search-bar">
+                <!-- Search form -->
+                <form>
+                    <!-- Search label -->
+                    <label for="setMarker"></label>
+                    <!-- Search input -->
+                    <input type="text" name="setMarker" id="setMarker" placeholder="Enter Address Here">
+                    <!-- Search button -->
+                    <button id="setMarkerButton">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Weather data container -->
+    <div class="container relative full-width" id="populating-parent">
+        <!-- Weather forecast section -->
+        <div class="row grow relative justify-bottom align-bottom full-width">
+            <!-- Current weather data section -->
+            <div class="column relative full-width" id="weather">
+                <!-- This is my current weather data -->
+            </div>
+            <!-- Forecast container section -->
+            <div class="column relative justify-bottom align-bottom">
+                <div class="row grow align-bottom justify-bottom full-width" id="forecast">
+                    <!-- Forecast weather data section -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<!-- Mapbox GL JavaScript library -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+<!-- Mapbox Geocoder utility functions -->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<!-- Weather Map JavaScript -->
+<script type="module" src="js/weather_map.js"></script>
+
+</body>
+</html>

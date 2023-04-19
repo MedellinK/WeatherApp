@@ -1,0 +1,139 @@
+#weather {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 250px;
+    border: 2px solid wheat;
+    border-radius: 25px;
+    background-color: rgba(0, 50, 50, 0.5);
+    min-height: 97%;
+    backdrop-filter: blur(2px);
+}
+
+.forecast-box {
+    border: 2px solid wheat;
+    flex-direction: column;
+    background-color: rgba(0, 50, 50, 0.5);
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+    min-height: 50%;
+}
+
+#populating-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    flex: 1 0 0.25px;
+}
+
+
+#forecast {
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+}
+
+* > .page-wrapper {
+    pointer-events: none;
+    height: 100%;
+}
+
+form {
+    pointer-events: all;
+    margin-bottom: -15px;
+}
+
+
+#main-header {
+    color: wheat;
+    padding-bottom: 10px;
+    background-color: rgba(0, 50, 50, 0.25);
+    width: 130px;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: -57px;
+    margin-top: 10px;
+}
+
+body {
+    color: white;
+}
+
+#search-bar {
+    width: 250px;
+    /*border: 2px solid wheat;*/
+    /*background-color: rgba(0,0,0,0.5);*/
+    flex-wrap: wrap;
+}
+
+#setMarkerButton {
+    border-radius: 500px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: wheat;
+    backdrop-filter: blur(3px);
+    width: 250px;
+    padding: 5px;
+    filter: opacity(50%);
+}
+
+#setMarkerButton:hover {
+    filter: opacity(100%);
+}
+
+#setMarker {
+    border-radius: 500px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: wheat;
+    width: 250px;
+    backdrop-filter: blur(3px);
+    padding: 5px;
+    filter: opacity(50%);
+}
+
+#setMarker:hover {
+    filter: opacity(100%);
+}
+
+input {
+    text-align: center;
+}
+
+#forecast-img {
+    min-width: 35%;
+    aspect-ratio: 1/1;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 15%;
+}
+
+#weather-img {
+    min-width: 60%;
+    min-height: 50%;
+
+}
+
+#facts {
+    color: rgba(0, 0, 0, 0);
+}
+
+#abbr-Day {
+    column-gap: 6px;
+}
+
+#taco {
+    padding: 0;
+}
+
+.description {
+    text-transform: capitalize;
+}
